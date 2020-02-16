@@ -1,5 +1,6 @@
 import React from 'react'
 import Guitar from './components/Guitar'
+import ChordSelect from './components/ChordSelect'
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Guitar />
         </div>
         <div className="col s9">
+        <ChordSelect />
         </div>
       </div>
     )
