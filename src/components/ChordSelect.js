@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
@@ -35,6 +34,7 @@ export default function ChordSelect() {
     setChord(event.target.value);
   };
 
+  console.log('Selected Chord ==>',chord);
   return (
     <div className={classes.root}>
       <FormControl variant="outlined" className={classes.formControl}>
